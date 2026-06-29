@@ -1,0 +1,26 @@
+{
+  "nodes": {
+    "bakery": {
+      "locked": {
+        "lastModified": 1782771419,
+        "narHash": "sha256-r/dTpEg3/t7RxkSsWYhS0gMQrUy0laCUWxjonwfPXa8=",
+        "owner": "wawwior",
+        "repo": "bakery",
+        "rev": "e1296fcb15915f5abba977427919495e0e6e1a58",
+        "type": "github"
+      },
+      "original": {
+        "owner": "wawwior",
+        "repo": "bakery",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "bakery": "bakery"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
