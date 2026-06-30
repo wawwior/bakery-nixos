@@ -8,9 +8,6 @@
   outputs =
     inputs@{ ... }:
     {
-      bakery.doughs = {
-        modules = import ./doughs/modules.nix inputs;
-        systems = import ./doughs/systems.nix inputs;
-      };
+      lib = import ./lib inputs;
     };
 }

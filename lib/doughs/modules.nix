@@ -1,7 +1,4 @@
-inputs@{ self, ... }:
-let
-  inherit (self) lib;
-in
+{ ... }:
 {
   requires = [ "modules" ];
 
