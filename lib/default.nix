@@ -44,9 +44,9 @@ in
           ((lib.descendAttrs (importExpr' expr)).bakery or [ ])
           ++ [
             {
-              doughs = {
-                modules = import ./doughs/modules.nix inputs;
-                systems = import ./doughs/systems.nix inputs;
+              recipes = {
+                modules = import ./recipes/modules.nix inputs;
+                systems = import ./recipes/systems.nix inputs;
               };
             }
           ]
