@@ -40,7 +40,7 @@ in
           [ expr' ];
 
       bakery = lib.enrichTypes (
-        lib.parseBakery (lib.descendAttrs (importExpr' expr)).bakery
+        lib.parseBakery ((lib.descendAttrs (importExpr' expr)).bakery or [ ])
         ++ [
           {
             doughs = {
