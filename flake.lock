@@ -2,11 +2,11 @@
   "nodes": {
     "bakery": {
       "locked": {
-        "lastModified": 1782822185,
-        "narHash": "sha256-Jd3M84OL9Nlid6uKbG2UJkIp+xIRg67Bo/p9WrBIoqg=",
+        "lastModified": 1782828750,
+        "narHash": "sha256-bkKrfipcwPLG6gSonDFnb+3gQXox7H8keV4PtjBMkCQ=",
         "owner": "wawwior",
         "repo": "bakery",
-        "rev": "389ce285c370e26734f0621d88234d87d9ff94c7",
+        "rev": "37c7350e65028b91caa47463919667426938c5f4",
         "type": "github"
       },
       "original": {

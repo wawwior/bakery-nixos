@@ -11,21 +11,18 @@
         specialArgs = {
           inputs = inputs';
         };
-        modules = [ module ];
+        modules = [
+          {
+            networking.hostName = module.hostName or name;
+            imports = module.requires;
+          }
+        ];
       };
     };
 
   attributes = {
     hostName = {
       combine = builtins.foldl' (_: str: str) "";
-
-      resolve = {
-        systems =
-          { ... }:
-          module: {
-            networking = { inherit (module) hostName; };
-          };
-      };
     };
   };
 }
