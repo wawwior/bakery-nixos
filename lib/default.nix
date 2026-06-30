@@ -40,15 +40,17 @@ in
           [ expr' ];
 
       bakery = lib.enrichTypes (
-        lib.parseBakery ((lib.descendAttrs (importExpr' expr)).bakery or [ ])
-        ++ [
-          {
-            doughs = {
-              modules = import ./doughs/modules.nix inputs;
-              systems = import ./doughs/systems.nix inputs;
-            };
-          }
-        ]
+        lib.parseBakery (
+          ((lib.descendAttrs (importExpr' expr)).bakery or [ ])
+          ++ [
+            {
+              doughs = {
+                modules = import ./doughs/modules.nix inputs;
+                systems = import ./doughs/systems.nix inputs;
+              };
+            }
+          ]
+        )
       );
 
       outputs = lib.produceOutputs bakery inputs';
